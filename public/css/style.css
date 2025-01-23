@@ -1,0 +1,206 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f0f8ff; /* Colore di sfondo azzurro chiaro */
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center; /* Allinea tutto il testo al centro */
+}
+
+/* NAVBAR SENZA BACKGROUND */
+nav {
+    color: #333; /* Colore del testo della navbar */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center; /* Centra i contenuti della navbar */
+    align-items: center;
+    border-bottom: 2px solid #388E3C;
+    width: 100%;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Colore del logo */
+    margin-right: auto; /* La logo rimane a sinistra */
+}
+
+nav a {
+    color: #333; /* Colore del testo dei link */
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centra gli item */
+    align-items: flex-start;
+    padding: 2rem 4rem;
+    width: 100%;
+}
+
+/* CARD COMPONENT */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 20px;
+    width: 300px; /* Dimensione fissa della card */
+    text-align: left; /* Assicura che il testo all'interno della card sia a sinistra */
+}
+
+/* FORMS */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Limita la larghezza dei form */
+}
+
+/* Form input styles */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* BUTTONS */
+button {
+    background-color: #4CAF50; /* Verde chiaro per i pulsanti */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* LINK BUTTONS */
+a.button-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+a.button-link:hover {
+    background-color: #388E3C;
+}
+
+/* ALERTS */
+.alert {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Aggiungi questo al tuo file styles.css */
+button[type="submit"].button-link {
+    background-color: red;
+    border-color: red;
+}
+
+button[type="submit"].button-link:hover {
+    background-color: darkred;
+}
